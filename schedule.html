@@ -13,15 +13,91 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
 	<link rel="manifest" href="assets/img/favicons/site.webmanifest">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
+    <script src="assets/js/stylish-portfolio.js" defer></script>
     <title>Harmonogram</title>
 </head>
 <body style="display: flex; flex-direction: column; height: 100%;">
     <div id="page-top"></div>
+
+    <a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
+    <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
+        <div class="container">
+            <ul class="nav navbar-nav sidebar-nav" id="sidebar-nav">
+                <li class="nav-item sidebar-brand" role="presentation">
+                    <a class="nav-link active js-scroll-trigger" href="index.html#page-top"><b>WSAD 2026</b></a>
+                </li>
+                <li class="nav-item sidebar-nav-item" role="presentation">
+                    <div class="d-flex align-items-stretch justify-content-between">
+                        <a class="nav-link js-scroll-trigger m-0 flex-grow-1 header-nav-link" href="index.html#page-top"><div class="offset-wrapper"><b>Home</b></div></a>
+                        <a class="text-light p-1 mr-1 d-flex align-items-center justify-content-center submenu-btn" type="button" data-toggle="collapse" data-target="#home-submenu" aria-expanded="false" aria-controls="home-submenu">▼</a>
+                    </div>
+                    <ul class="collapse list-unstyled flex-column ml-2 overflow-hidden" id="home-submenu">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="index.html#about">O konferencji</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="index.html#guests">Szczegóły</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="index.html#portfolio">Harmonogram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="index.html#committee">Komitet organizacyjny</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item sidebar-nav-item" role="presentation">
+                    <div class="d-flex align-items-stretch justify-content-between">
+                        <a class="nav-link js-scroll-trigger m-0 flex-grow-1 header-nav-link" href="form.html#page-top"><div class="offset-wrapper"><b>Rejestracja</b></div></a>
+                        <a class="text-light p-1 mr-1 d-flex align-items-center justify-content-center submenu-btn" type="button" data-toggle="collapse" data-target="#form-submenu" aria-expanded="false" aria-controls="form-submenu">▼</a>
+                    </div>
+                    <ul class="collapse list-unstyled flex-column ml-2 overflow-hidden" id="form-submenu">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="form.html#form">Formularz zgłoszeniowy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item sidebar-nav-item" role="presentation">
+                    <div class="d-flex align-items-stretch justify-content-between">
+                        <a class="nav-link js-scroll-trigger m-0 flex-grow-1 header-nav-link" href="guests.html#page-top"><div class="offset-wrapper"><b>Zaproszeni goście</b></div></a>
+                        <a class="text-light p-1 mr-1 d-flex align-items-center justify-content-center submenu-btn" type="button" data-toggle="collapse" data-target="#guests-submenu" aria-expanded="false" aria-controls="guests-submenu">▼</a>
+                    </div>
+                    <ul class="collapse list-unstyled flex-column ml-2 overflow-hidden" id="guests-submenu">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="guests.html#guests">Prezenterzy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="guests.html#guests">Abstrakty</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item sidebar-nav-item" role="presentation">
+                    <div class="d-flex align-items-stretch justify-content-between">
+                        <a class="nav-link js-scroll-trigger m-0 flex-grow-1 header-nav-link" href="schedule.html#page-top"><div class="offset-wrapper"><b>Harmonogram</b></div></a>
+                        <a class="text-light p-1 mr-1 d-flex align-items-center justify-content-center submenu-btn" type="button" data-toggle="collapse" data-target="#schedule-submenu" aria-expanded="false" aria-controls="schedule-submenu">▼</a>
+                    </div>
+                    <ul class="collapse list-unstyled flex-column ml-2 overflow-hidden" id="schedule-submenu">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="schedule.html#schedule">Dzień 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="schedule.html#schedule">Dzień 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <header class="bg-primary text-white py-5">
         <div class="container text-center">
             <h1 class="display-3">Harmonogram</h1>
         </div>
     </header>
+
     <main style="flex: 1;">
         <section id="schedule" class="content-section bg-light">
             <div class="container text-center">
@@ -34,6 +110,7 @@
             </div>
         </section>
     </main>
+    
     <footer class="footer text-center">
         <div class="container">
             <h2>Kontakt</h2>

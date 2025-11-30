@@ -170,7 +170,7 @@ h6 {
     position: fixed;
     height: 100%;
     right: 0;
-    z-index: 2;
+    z-index: 5;
 }
 
 .sidebar-nav {
