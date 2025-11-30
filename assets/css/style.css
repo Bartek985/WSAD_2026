@@ -166,26 +166,68 @@ h6 {
     }
 }
 
-#sidebar-wrapper {
+#sidebar-wrapper{
     position: fixed;
-    z-index: 2;
-    right: 0;
-    width: 250px;
     height: 100%;
-    transition: all .4s ease 0s;
-    -webkit-transform: translateX(250px);
-    transform: translateX(250px);
-    background: #1d809f;
-    border-left: 1px solid hsla(0,0%,100%,.1);
+    right: 0;
+    z-index: 2;
 }
 
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+@media (min-width: 992px) {
+    #sidebar-wrapper {
+        width: 250px;
+        transition: all .4s ease 0s;
+        -webkit-transform: translateX(250px);
+        transform: translateX(250px);
+        border-left: 1px solid hsla(0,0%,100%,.1);
+        background: rgb(29, 128, 159);
+    }
+
+    #sidebar-wrapper.active {
+        right: 250px;
+        width: 250px;
+        transition: all .4s ease 0s;
+    }
+
+    .sidebar-nav {
+        width: 250px;
+    }
+}
+
+@media (max-width: 991px) {
+    #sidebar-wrapper {
+        top: 0;
+        width: 100%;
+        background: rgba(29, 128, 159, 0.9);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .4s ease;
+        transform: none !important;
+    }
+
+    #sidebar-wrapper.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .sidebar-nav{
+        left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    #sidebar-wrapper .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .sidebar-nav li.sidebar-nav-item a {
@@ -225,12 +267,6 @@ h6 {
     background: none;
 }
 
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    transition: all .4s ease 0s;
-}
-
 .menu-toggle {
     position: fixed;
     right: 15px;
@@ -251,6 +287,20 @@ h6 {
 
 .menu-toggle:hover {
     background: #343a40;
+}
+
+.submenu-btn
+{
+    width: 50px;
+}
+
+@media (max-width: 991px) {
+    .offset-wrapper{
+        position: relative;
+        left: 25px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .service-icon {
