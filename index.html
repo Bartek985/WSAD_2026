@@ -28,12 +28,13 @@
     <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
         <div class="container">
             <ul class="nav navbar-nav sidebar-nav" id="sidebar-nav">
-                <li class="nav-item sidebar-brand" role="presentation">
+                <li class="nav-item sidebar-brand d-flex align-items-center" role="presentation">
                     <a class="nav-link active js-scroll-trigger" href="#page-top"><b>WSAD 2026</b></a>
+                    <img src="./assets/img/wsad logo.png" alt="WSAD 2026" height="32px"/>
                 </li>
                 <li class="nav-item sidebar-nav-item" role="presentation">
                     <div class="d-flex align-items-stretch justify-content-between">
-                        <a class="nav-link js-scroll-trigger m-0 flex-grow-1 header-nav-link" href="index.html#page-top"><div class="offset-wrapper"><b>Home</b></div></a>
+                        <a class="nav-link js-scroll-trigger m-0 flex-grow-1 header-nav-link" href="index.html#page-top"><div class="offset-wrapper"><b>Start</b></div></a>
                         <a class="text-light p-1 mr-1 d-flex align-items-center justify-content-center submenu-btn" type="button" data-toggle="collapse" data-target="#home-submenu" aria-expanded="false" aria-controls="home-submenu">▼</a>
                     </div>
                     <ul class="collapse list-unstyled flex-column ml-2 overflow-hidden" id="home-submenu">
@@ -106,13 +107,18 @@
         <section id="about" class="content-section bg-light">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-lg-10 mx-auto">
+                    <div class="col-lg-11 mx-auto">
                         <h2>O konferencji WSAD</h2>
-                        <p class="lead mb-5"><span><br>Ogólnopolskie Warsztaty ze Statystyki i Analizy Danych to konferencja orgranizowana przez Studenckie Koło Naukowe Matematyków Politechniki Krakowskiej. Obecna edycja jest już dziesiątą. 
-                        Ta edycja jest wyjątkowa nie tylko ze względu na jej jubileuszowy charakter, ale także dlatego, że odbędzie się w formie zdalnej. Już 22 i 23 maja będzie można wziąć udział w wykładach prowadzonych przez zaproszonych gości zarówno ze świata naukowego jak i profesjonalnego, oraz w części warsztatowej. 
-                        W ramach części warsztatowej każdy z uczestników będzie mógł poczuć na własnej skórze jak rozwiązuje się problemy z zakresu analizy danych i statystyki w praktyce. Część wykładowa natomiast ma na celu poszerzyć horyzonty uczestników zarówno ze strony praktycznej jak i teoretycznej. Odbędą się również sesje referatów studenckich. Serdecznie zapraszamy do wzięcia udziału w wydarzeniu.</span></p>
+                        <p class="lead mb-2"><br/>Gdzie teoria spotyka praktykę – Ogólnopolskie Warsztaty Statystyki i Analizy Danych</p>
+
+                        <p class="lead mb-2">Ogólnopolskie Warsztaty Statystyki i Analizy Danych to cykliczne wydarzenie organizowane przez Studenckie Koło Naukowe Matematyków Politechniki Krakowskiej. Od lat tworzymy przestrzeń, w której matematyka wychodzi z sal wykładowych i pokazuje swoje praktyczne oblicze w biznesie, finansach i innych zastosowaniach. W tym roku będzie to już XIV edycja. Konferencja jest platformą wymiany wiedzy pomiędzy studentami, a ekspertami z branży Data Science i analizy finansowej. Poruszamy tematy od klasycznej statystyki, przez inżynierię finansową, aż po zaawansowane metody Machine Learning.</p>
+
+                        <p class="lead mb-2">WSAD to miejsce zarówno dla debiutantów stawiających pierwsze kroki w analizie danych, jak i dla pasjonatów szukających inspiracji do dalszego rozwoju. Na konferencji można spodziewać się warsztatów i sesji tematycznych.</p>
+
+                        <p class="lead mb-5">Nie zabraknie możliwości zaprezentowania swoich badań – zapraszamy do zgłoszeń referatów lub posterów i podzielenia się swoją pasją!</p>
                     </div>
                 </div>
+                <img src="./assets/img/wsad logo.png" alt="WSAD 2026" height="192px"/>
             </div>
         </section>
         <section id="guests" class="content-section bg-primary text-white text-center">
@@ -120,7 +126,8 @@
                 <div class="content-section-heading">
                     <h2 class="mb-5">Zaproszeni goście</h2>
                 </div>
-                <div class="row">
+                <p class="h4">Pełna lista zaproszonych gości zostanie udostępniona wkrótce</p>
+                <!-- <div class="row">
                     <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
                         <span class="mx-auto service-icon rounded-circle mb-3"></span>
                         <h4><strong>Gość 1</strong></h4>
@@ -131,7 +138,7 @@
                         <h4><strong>Gość 2</strong></h4>
                         <p class="mb-0 text-faded">Wykład</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section id="services" class="content-section bg-primary text-white text-center">
@@ -199,14 +206,21 @@
                 <div class="content-section-heading">
                     <h2 class="mb-5">Komitet organizacyjny</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3"></span>
-                        <h4><strong>Organizator 1</strong></h4>
-                        <p class="mb-0 text-faded">jakiś opis</p>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3"><i class="icon-user"></i></span>
+                        <h4><strong>Jan Kocierz</strong></h4>
+                        <p class="mb-0 text-faded">Przewodniczący</p>
                     </div>
-                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3"></span>
-                        <h4><strong>Organizator 2</strong></h4>
-                        <p class="mb-0 text-faded">kolejny opis</p>
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3"><i class="icon-user"></i></span>
+                        <h4><strong>Jakub Dyrcz</strong></h4>
+                        <p class="mb-0 text-faded">Zastępca</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3"><i class="icon-user"></i></span>
+                        <h4><strong>Szymon Bizoń</strong></h4>
+                        <p class="mb-0 text-faded">Sekretarz</p>
                     </div>
                 </div>
             </div>
@@ -214,14 +228,24 @@
     </main>
     
     <footer class="footer text-center bg-light" id="contact">
-        <div class="container">
-            <h2>Kontakt</h2>
-            <ul class="list-inline mb-5">
-                <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-social-facebook"></i></a></li>
-                <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="https://github.com/Hawax/Strona-WSAD"><i class="icon-social-github"></i></a></li>
-            </ul>
-            <p class="text-muted mb-0 small">Copyright &nbsp;© WSAD 2026</p>
+        <div class="container d-flex">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <ul class="list-inline mb-3">
+                    <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="mailto:sknm@gmail.com"><i class="icon-envelope"></i></a></li>
+                    <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="https://www.facebook.com/sknmpk"><i class="icon-social-facebook"></i></a></li>
+                </ul>
+                <p class="text-dark mb-3">e-mail: <a class="text-muted" href="mailto:sknm@gmail.com">sknm@gmail.com</a></p>
+            </div>
+            <div class="container">
+                <h2>Organizatorzy</h2>
+                <ul class="list-inline mb-3">
+                    <li class="list-inline-item">&nbsp;<img src="./assets/img/wsad logo.png" alt="SKNM6" height="96px"/></li>
+                    <li class="list-inline-item">&nbsp;<img src="./assets/img/sknm_logo.png" alt="SKNM6" height="96px"/></li>
+                </ul>
+            </div>
         </div>
+        <p class="text-muted mb-0 small">Copyright &nbsp;© WSAD 2025</p>
     </footer>
     <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
 </body>
