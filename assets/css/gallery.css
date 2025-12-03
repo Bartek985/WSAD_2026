@@ -1,17 +1,15 @@
 :root{
     --g-gap: 1rem;
     --g-radius: 8px;
-    --g-bg: #111; /* tło lightbox */
+    --g-bg: #111;
   }
 
-  /* Kontener galerii */
   .gallery {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1.25rem;
   }
 
-  /* CSS Grid: zmienna ilość kolumn */
   .gallery-grid{
     display: grid;
     gap: var(--g-gap);
@@ -22,13 +20,11 @@
   @media (min-width: 900px){ .gallery-grid{ grid-template-columns: repeat(3, 1fr); } }
   @media (min-width: 1200px){ .gallery-grid{ grid-template-columns: repeat(4, 1fr); } }
 
-  /* Kafelek: box z zachowaniem proporcji i cropem zdjęcia */
   .gallery-item{
     position: relative;
     overflow: hidden;
     border-radius: var(--g-radius);
     background: #f2f2f2;
-    /* domyślny stosunek; możesz ustawić różne klasy (tall, wide) żeby mieć warianty */
     aspect-ratio: 4 / 3;
     cursor: zoom-in;
     box-shadow: 0 6px 18px rgba(0,0,0,.08);
@@ -39,25 +35,21 @@
     box-shadow: 0 10px 30px rgba(0,0,0,.12);
   }
 
-  /* obrazek w kafelku */
   .gallery-item img{
     width: 100%;
     height: 100%;
-    object-fit: cover; /* kluczowy - przycina ładnie różne wymiary */
+    object-fit: cover;
     display: block;
     vertical-align: middle;
   }
 
-  /* opcjonalne warianty rozmiarów (np. większe kafelki)
-     używaj klasy .span-rows-2 lub .span-cols-2 na elementach .gallery-item */
-  .span-rows-2{ aspect-ratio: 4 / 6; }   /* wyższy kafelek */
-  .span-cols-2{ grid-column: span 2; }   /* szeroki kafelek (na >= 900px) */
+  .span-rows-2{ aspect-ratio: 4 / 6; }
+  .span-cols-2{ grid-column: span 2; } 
 
   @media (max-width: 899px){
-    .span-cols-2{ grid-column: auto; } /* zapobiegaj span na małych ekranach */
+    .span-cols-2{ grid-column: auto; }
   }
 
-  /* PODPIS pod obrazkiem (opcjonalny) */
   .gallery-caption{
     position: absolute;
     left: 0;
@@ -72,11 +64,10 @@
   }
   .gallery-item:hover .gallery-caption{ opacity: 1; }
 
-  /* LIGHTBOX - prosty overlay */
   .glightbox {
     position: fixed;
     inset: 0;
-    display: none;          /* togglowane przez JS */
+    display: none;
     align-items: center;
     justify-content: center;
     background: rgba(0,0,0,.75);
@@ -106,7 +97,6 @@
     background: rgba(0,0,0,.35);
   }
 
-  /* przycisk zamknij */
   .glightbox .close {
     position: absolute;
     top: 12px;

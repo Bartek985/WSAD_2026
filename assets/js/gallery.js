@@ -4,7 +4,6 @@
   const lbImg = document.getElementById('glightboxImg');
   const lbMeta = document.getElementById('glightboxMeta');
   const lbClose = document.getElementById('glightboxClose');
-  // otwieranie lightboxa po kliknięciu kafelka
   grid.addEventListener('click', function(e){
     const fig = e.target.closest('.gallery-item');
     if(!fig) return;
@@ -16,11 +15,9 @@
     lbImg.alt = alt;
     lbMeta.textContent = caption;
     lightbox.classList.add('open');
-    // focus accessibility
     document.body.style.overflow = 'hidden';
     document.getElementById('glightboxBox').focus();
   });
-  // zamykanie (klik tła / przycisk / ESC)
   function closeLB(){
     lightbox.classList.remove('open');
     lbImg.src = '';
@@ -35,6 +32,4 @@
   document.addEventListener('keydown', function(e){
     if(e.key === 'Escape' && lightbox.classList.contains('open')) closeLB();
   });
-  // Accessibility: trap focus minimal (focus glightboxBox on open)
-  // (For full trap implementation consider focus-trap library)
 })();
