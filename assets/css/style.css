@@ -466,3 +466,8 @@ footer{
         font-size: 0.75rem;
     }   
 }
+
+.stop-transitions * {
+    transition: none !important;
+    animation: none !important;
+}
