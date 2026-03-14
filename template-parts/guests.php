@@ -24,7 +24,7 @@ $filter = $args['filter'] ?? true;
       }
 
 
-      if ($filtered_array && !empty($filtered_array)):
+      if ($filtered_array && !empty($filtered_array) && $show_guests):
         foreach ($filtered_array as $guest):
           if ($filter) {
             get_template_part('template-parts/guest-card-main', null, array('guest' => $guest));
@@ -33,7 +33,7 @@ $filter = $args['filter'] ?? true;
           }
         endforeach;
       else: ?>
-        <p class="text-white">Więcej szczegółów niebawem! Bądź na biężąco i zaobserwuj naszą stronę na Facebooku!</p>
+        <p>Więcej szczegółów niebawem! Bądź na biężąco i zaobserwuj naszą stronę na Facebooku!</p>
       <?php endif; ?>
     </div>
   </div>

@@ -1,6 +1,7 @@
 <?php
 $presentations = carbon_get_theme_option('crb_schedule_list');
 $show_schedule = carbon_get_theme_option('crb_show_schedule');
+$color_scheme = $args['color_scheme'] ?? 'blue';
 ?>
 
 <section id="abstracts"
@@ -30,7 +31,8 @@ $show_schedule = carbon_get_theme_option('crb_show_schedule');
         <?php endforeach;
       else: ?>
         <div>
-          <p class="text-muted">Abstrakty zostaną opublikowane wkrótce. Bądź na biężąco i zaobserwuj naszą stronę na Facebooku!</p>
+          <p class="text-muted">Abstrakty zostaną opublikowane wkrótce. Bądź na biężąco i zaobserwuj naszą stronę na
+            Facebooku!</p>
         </div>
       <?php endif; ?>
     </div>
