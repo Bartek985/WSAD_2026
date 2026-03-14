@@ -13,7 +13,7 @@ $color_scheme = $args['color_scheme'] ?? 'blue';
     </div>
     <div class="h4 m-auto flex-wrap mb-5 ">
       <?php
-      if (!$show_schedule):
+      if ($show_schedule && !empty($presentations)):
         foreach ($presentations as $presentation): ?>
 
           <div class="col-md-6 mb-5 m-auto pb-5">
@@ -31,8 +31,8 @@ $color_scheme = $args['color_scheme'] ?? 'blue';
         <?php endforeach;
       else: ?>
         <div>
-          <p class="text-muted">Abstrakty zostaną opublikowane wkrótce. Bądź na biężąco i zaobserwuj naszą stronę na
-            Facebooku!</p>
+          <p class="text-muted">Abstrakty zostaną opublikowane wkrótce. Zaobserwuj naszą stronę na
+            Facebooku, aby być na bieżąco.</p>
         </div>
       <?php endif; ?>
     </div>

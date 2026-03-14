@@ -18,8 +18,6 @@ $schedule = carbon_get_theme_option('crb_schedule_list');
 
       <div class="container text-center p-4">
 
-
-
         <?php
 
         if ($show_schedule && !empty($schedule)):

@@ -95,7 +95,6 @@ function crb_attach_theme_options()
 							$options = array();
 							// Startujemy od 1, żeby nie było "Dnia 0"
 							for ($i = 1; $i <= $n_days; $i++) {
-								// print_r($i);
 								$options["day_$i"] = "Dzień $i";
 							}
 
