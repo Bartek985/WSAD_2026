@@ -12,6 +12,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: serwer2559152.home.pl
-          username: wordpress@wsad.edu.pl
+          username: github@wsad.edu.pl
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: "/WSAD_THEME"
