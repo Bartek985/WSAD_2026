@@ -14,4 +14,4 @@ jobs:
           server: serwer2559152.home.pl
           username: github@wsad.edu.pl
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: "/WSAD_THEME"
+          server-dir: "/WSAD_THEME/"
