@@ -253,3 +253,16 @@ function create_my_theme_pages()
 	}
 }
 add_action('after_switch_theme', 'create_my_theme_pages');
+
+
+add_action('admin_enqueue_scripts', function() {
+	wp_add_inline_script(
+		'carbon_fields-boot',
+		'
+		if (window.flatpickr {
+		flatpickr..l10ns.default.firstDayOfWeek = 1;
+		}
+		',
+	'after'
+	);
+});
