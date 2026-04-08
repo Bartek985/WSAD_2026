@@ -78,7 +78,8 @@ $end_month_active = plMonth(date("n", strtotime($date_end_active)));
               <p class="fs-4 mt-4">Zapisy zostały zakończone. Dziękujemy za zainteresowanie.</p>
             <?php endif; ?>
 
-
+          <?php else: ?>
+            Wkrótce rozpoczną się zapisy. Zapraszamy do śledzenia naszych social mediów, aby być na bieżąco.
           </div>
         <?php endif; ?>
 
