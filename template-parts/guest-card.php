@@ -6,7 +6,7 @@ $photo_link = wp_get_attachment_image_url($guest['photo'], 'full');
 
 ?>
 
-<div class="col-md-6 col-6 mb-5 m-auto pb-5">
+<div class="col-md-3 col-3 mb-5 m-auto pb-5">
 
     <?php get_template_part('template-parts/image-circle', null, array('photo' => $guest['photo'])); ?>
 
