@@ -32,7 +32,7 @@ $all_editions = carbon_get_theme_option('crb_previous_editions');
     <div class="container">
       <ul class="nav navbar-nav sidebar-nav" id="sidebar-nav">
         <li class="nav-item sidebar-brand d-flex align-items-center" role="presentation">
-          <a class="nav-link active js-scroll-trigger" href="index.html#page-top"><b>WSAD 2026</b></a>
+          <a class="nav-link active js-scroll-trigger" "<?php echo esc_url(home_url('/')); ?>#page-top"><b>WSAD 2026</b></a>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wsad_logo.png" alt="WSAD 2026"
             height="32px" />
         </li>
