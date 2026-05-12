@@ -149,6 +149,18 @@ function crb_attach_theme_options()
 				->set_default_value('sknm.kontakt@gmail.com'),
 		));
 
+		Container::make('theme_options', 'Partnerzy')
+		->add_fields(array(
+			Field::make('complex', 'crb_partners_list', 'Lista poprzednich edycji')
+				->add_fields('partnerzy', array(
+					Field::make('image', 'photo'),
+
+				)),
+
+			Field::make('checkbox', 'crb_show_partners', 'Pokaż partnerów na stronie')
+				->set_option_value('no'),
+		));
+
 	Container::make('theme_options', 'Poprzednie edycje')
 		->add_fields(array(
 			Field::make('complex', 'crb_previous_editions', 'Lista poprzednich edycji')

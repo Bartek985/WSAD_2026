@@ -3,6 +3,9 @@ $mail = carbon_get_theme_option('crb_mail');
 $fb_wsad = carbon_get_theme_option('crb_facebook_link_wsad');
 $fb_sknm = carbon_get_theme_option('crb_facebook_link_sknm');
 ?>
+
+<?php get_template_part('template-parts/partners'); ?>
+
 <footer class="footer text-center bg-light" id="contact">
   <div class="container d-flex">
     <div class="container">
