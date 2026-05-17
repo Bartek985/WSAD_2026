@@ -6,7 +6,7 @@ $filter = $args['filter'] ?? true;
 ?>
 
 <section id="guests"
-  class="content-section text-center <?php echo $color_scheme === 'blue' ? 'bg-primary text-white' : 'bg-light'; ?>">
+  class="content-section text-center <?php echo $color_scheme === 'blue' ? 'bg-primary text-white' : 'bg-light'; ?> ">
   <div class="container">
     <div class="content-section-heading">
       <h2 class="mb-5">Zaproszeni goście</h2>

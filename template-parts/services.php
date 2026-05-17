@@ -6,7 +6,7 @@ $month = $args['month'];
 $year = $args['year'];
 $show_date = $args['show_date'];
 ?>
-<section id="services" class="content-section bg-primary text-white text-center">
+<section id="services" class="content-section bg-primary text-white text-center pt-0">
   <div class="container">
     <div class="content-section-heading">
       <h2 class="mb-5">Szczegóły</h2>
