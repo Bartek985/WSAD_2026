@@ -156,6 +156,9 @@ function crb_attach_theme_options()
 					Field::make('image', 'photo'),
 					Field::make('text', 'url', 'Link')
 						->set_attribute('placeholder', 'https://wsad.edu.pl/'),
+					Field::make('text', 'size', 'wielkość logo (nie ruszać, chyba że naprawdę trzeba)')
+						->set_attribute('placeholder', '64')
+						->set_default_value('64')
 
 				)),
 
@@ -163,10 +166,13 @@ function crb_attach_theme_options()
 				->set_option_value('no'),
 
 			Field::make('complex', 'crb_orginiser_list', 'Lista organizatorów edycji')
-				->add_fields('partnerzy', array(
+				->add_fields('organizator', array(
 					Field::make('image', 'photo'),
 					Field::make('text', 'url', 'Link')
 						->set_attribute('placeholder', 'https://wsad.edu.pl/'),
+					Field::make('text', 'size', 'wielkość logo (nie ruszać, chyba że naprawdę trzeba)')
+						->set_attribute('placeholder', '64')
+						->set_default_value('64')
 
 				)),
 
