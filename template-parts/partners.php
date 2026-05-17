@@ -22,11 +22,11 @@ if ($show_partners && !empty($partners)):
                 <?php
                 $img = wp_get_attachment_image_url($partner['photo'], 'medium');
                 $link = $partner['url'];
-
+                $size = $partner['size'];
                 if ($link): ?>
                   <a href="<?php echo $link; ?>" target="_blank">
                   <?php endif; ?>
-                  <img src="<?php echo $img; ?>" class="img-fluid " alt="" style="height:64px">
+                  <img src="<?php echo $img; ?>" class="img-fluid " alt="" style="height:<?php echo $size; ?>px">
 
                   <?php if ($link): ?>
                   </a>
