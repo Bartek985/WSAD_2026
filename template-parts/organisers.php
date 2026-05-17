@@ -15,7 +15,7 @@ $partners = carbon_get_theme_option('crb_orginiser_list');
         <div class="row justify-content-center">
 
           <?php foreach ($partners as $partner): ?>
-            <div class="text-center mb-4 mx-4 d-flex align-items-center justify-content-center">
+            <div class="text-center m-4 d-flex align-items-center justify-content-center">
               <?php
               $img = wp_get_attachment_image_url($partner['photo'], 'medium');
               $img_size = $partner['size'];
