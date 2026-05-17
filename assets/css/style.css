@@ -447,11 +447,6 @@ h6 {
   padding: 0;
 }
 
-footer.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 footer.footer .social-link {
   display: block;
   height: 4rem;
@@ -482,3 +477,4 @@ footer {
   transition: none !important;
   animation: none !important;
 }
+

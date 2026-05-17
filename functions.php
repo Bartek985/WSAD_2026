@@ -149,16 +149,28 @@ function crb_attach_theme_options()
 				->set_default_value('sknm.kontakt@gmail.com'),
 		));
 
-		Container::make('theme_options', 'Partnerzy')
+	Container::make('theme_options', 'Partnerzy/Organizatorzy')
 		->add_fields(array(
-			Field::make('complex', 'crb_partners_list', 'Lista poprzednich edycji')
+			Field::make('complex', 'crb_partners_list', 'Lista partnerów edycji')
 				->add_fields('partnerzy', array(
 					Field::make('image', 'photo'),
+					Field::make('text', 'url', 'Link')
+						->set_attribute('placeholder', 'https://wsad.edu.pl/'),
 
 				)),
 
 			Field::make('checkbox', 'crb_show_partners', 'Pokaż partnerów na stronie')
 				->set_option_value('no'),
+
+			Field::make('complex', 'crb_orginiser_list', 'Lista organizatorów edycji')
+				->add_fields('partnerzy', array(
+					Field::make('image', 'photo'),
+					Field::make('text', 'url', 'Link')
+						->set_attribute('placeholder', 'https://wsad.edu.pl/'),
+
+				)),
+
+
 		));
 
 	Container::make('theme_options', 'Poprzednie edycje')
@@ -267,7 +279,7 @@ function create_my_theme_pages()
 add_action('after_switch_theme', 'create_my_theme_pages');
 
 
-add_action('admin_enqueue_scripts', function() {
+add_action('admin_enqueue_scripts', function () {
 	wp_add_inline_script(
 		'carbon_fields-boot',
 		'
@@ -275,6 +287,6 @@ add_action('admin_enqueue_scripts', function() {
 		flatpickr..l10ns.default.firstDayOfWeek = 1;
 		}
 		',
-	'after'
+		'after'
 	);
 });
