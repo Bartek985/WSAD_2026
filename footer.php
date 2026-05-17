@@ -6,7 +6,7 @@ $organisers = carbon_get_theme_option('crb_orginiser_list');
 
 ?>
 
-<div class="content-section bg-light">
+<div class="content-section bg-light pb-3">
   <?php get_template_part('template-parts/partners'); ?>
   <?php get_template_part('template-parts/organisers'); ?>
 </div>
