@@ -38,8 +38,8 @@ $schedule = carbon_get_theme_option('crb_schedule_list');
                 <thead>
                   <tr>
                     <th scope="col" class="align-middle text-center" style="width: 20%">Godzina</th>
-                    <th scope="col" class="align-middle text-center" style="width: 50%">Temat</th>
-                    <th scope="col" class="align-middle text-center" style="width: 30%">Prezentujący</th>
+                    <th scope="col" class="align-middle text-center" style="width: 50%"></th>
+                    <th scope="col" class="align-middle text-center" style="width: 30%"></th>
                   </tr>
                 </thead>
                 <tbody>
