@@ -34,7 +34,7 @@ $schedule = carbon_get_theme_option('crb_schedule_list');
               <h1 class="mb-4">
                 <?php echo $new_day . ' ' . plMonth($new_month); ?>
               </h1>
-              <table class="table table-bordered table-zebra">
+              <table class="table table-bordered table-zebra table-striped">
                 <thead>
                   <tr>
                     <th scope="col" class="align-middle text-center" style="width: 20%">Godzina</th>
@@ -51,7 +51,13 @@ $schedule = carbon_get_theme_option('crb_schedule_list');
                   foreach ($filtered_array as $event): ?>
                     <tr>
                       <td class="align-middle text-center">
-                        <?php echo esc_html($event['time_start']) . ' - ' . esc_html($event['time_end']); ?>
+                        <?php 
+                        echo esc_html($event['time_start']); ?>
+                        <?php
+                        if(esc_html($event['time_end'])) {
+                          echo ' - ' . esc_html($event['time_end']);;
+                        }
+                         ?>
                       </td>
                       <td class="align-middle text-center">
                         <?php echo esc_html($event['title']); ?>
