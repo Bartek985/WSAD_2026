@@ -9,7 +9,7 @@ get_template_part('template-parts/guests', null, array(
   'color_scheme' => 'light',
   'filter' => false
 ));
-get_template_part('template-parts/abstracts');
+// get_template_part('template-parts/abstracts');
 
 ?>
 
